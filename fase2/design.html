@@ -44,38 +44,118 @@
                 <h4>Flex Box</h4>
                 <p>el posicionamiento flexible o flexbox permite acomodar los elementos de una página según cambien las dimensiones y orientación de la página.
                 la idea principal es que un contenedor flexible expande o comprima sus elementos para rellenar el espacio libre o ajustarse al area disponible. <br>
-                <img src="img/imagen_flexbox.jpg" alt="Conceptos de Flexbox"> <br>
+                <center><img src="img/imagen_flexbox.jpg" alt="Conceptos de Flexbox"> <br></center>
                 para mostrar las caracteristicas del flexbox se debe crear el contenedor con el siguiente codigo. <br>
                 <center>div class="flex-container"  <br>
                     div <br>
-                        1
+                        container1
                     /div 
                     div <br>
-                        2
+                        container2
                     /div
                     div <br>
-                        3
+                        container3
                     /div
                     div <br>
-                        4
+                        container4
                     /div <br>
-                    /div   
-                </center> <br>
-                 tambien debemos utilizar una hoja de estilos para darle formato a los elementos <br>
+                    /div 
+                </p> <br><br>
+                </center> 
+                <p>
+                 tambien debemos utilizar una hoja de estilos CSS para darle formato a los elementos <br><br>
+                </p>
+                <p>   
+                .flex-container{<br>
+                    display: flex;<br>
+                    background-color: burlywood;<br>
+                    padding: 10px;<br>
+                    border: 2px solid black;<br>
+                 } <br><br>
+                 .flex-container div{<br>
+                    background-color: gainsboro;<br>
+                    width: 100px;<br>
+                    magin: 10px;<br>
+                    text-alingn: center;<br>
+                    line-height: 75px;<br>
+                    font-size: 30px;<br>
+                    border: 2px solid black;<br>
+                 }
+                </p> <br><br>
+                 <p>
+                    los flexbox manejan direccion con la propiedad flex-direction el cual especifica
+                    la direccion principal de como colocar los elementos en el contenedor.
+                    los valores que se utilizan son: row(fila),  row-reverse (fila invertida), 
+                    column(columna), column-reverse(columna.invertida). <br><br>
+                    #container1{<br>
+                        flex-direction: row;<br>
+                    }br
+                    #container2{<br>
+                        flex-direction: row-reverse;<br>
+                    }br
+                    #container3{<br>
+                        flex-direction: column;<br>
+                    }<br>
+                    #container4{<br>
+                        flex-direction: column-reverse;<br>
+                    }<br>
+                 </p><br>
+                <center>
+                 <img src="img/ejemplo_flexbox.jpg" alt="ejemplo de Flexbox"> <br>
+              </center><br> 
+              <p>
+                hay otras propiedades que nos permiten ordenarlos y que ocupen un 
+                espacio estas propiedades son: <br>
+                order: este indica el orden donde quiere que aparezca el elemento
+                dentro del contenedor dentro del div hijo se coloca el siguiente 
+                codigo: order: 1 <br>
+                flex-grow: esta propiedad establece cuanto crecera el elemento en 
+                relacion con los otros y lo indicamos asi: flex-grow: 2 <br>
+                flex-sharing: es lo contrario se encoge de tamaño en relacion 
+                con los otros. <br>
+                flex-basis: indica el tamaño por defecto (ancho) del elemento antes
+                que el espacio libre sea distribuido normalmente se deja el valor por 
+                defecto flex-basis: auto. <br>
 
-                 <center>
-                    .flex-container
-                    
-                 </center>
 
-
-                </p>            
+              </p>               
                                    
-                <p>Referencia Bibliografica <br> Recio García, J. A. (2016). HTML5, CSS3 y JQuery: curso práctico. RA-MA Editorial. p. 118. https://elibro-net.bibliotecavirtual.unad.edu.co/es/ereader/unad/106494?page=52</p>
+                <p>Referencia Bibliografica <br> Recio García, J. A. (2016). HTML5, CSS3 y JQuery: curso práctico. RA-MA Editorial. p. 118-127. https://elibro-net.bibliotecavirtual.unad.edu.co/es/ereader/unad/106494?page=118</p>
             </article>
             <article>
                 <h4>Listas y enlaces en HTML</h4>
-                <p>Referencia Bibliografica <br> Recio García, J. A. (2016). HTML5, CSS3 y JQuery: curso práctico. RA-MA Editorial. p. 118. https://elibro-net.bibliotecavirtual.unad.edu.co/es/ereader/unad/106494?page=52</p>
+                <p>En HTML5 se definen 3 tipos listas en las cuales las voy a listar como ejemplo 
+                   y las listas tambien se pueden anidar unas dentro de otras </p>
+                <ol>
+                    <li>listas con numeros</li>
+                    <li>listas con viñetas</li>
+                    <li>listas con definiciones</li>
+                </ol>
+                <dl> 
+                     <li>listas numeradas: sirven para crear listas con numeros. 
+                        y etiqueta es ol /ol y
+                     </li>
+                    <li>listas con viñetas: estas sirven para crear diferentes listas
+                         con simbolos y viñetas y la etiqueta ul /ul 
+                     </li>
+                     <li>listas de definiciones: sirve para definir terminos y 
+                          la etiquetas dl /dl.
+                     </li>
+                 </dl><br>
+                
+                 <p>
+                    Los enlaces o tambien conocidos como hipervinculos o hiperenlaces que nos 
+                    permiten mover entre diferentes partes del documento. <br>
+                    para añadir un enlace usamos la etiqueta <br>
+                    a href=""></a> <br>
+                    donde estan las comillas se coloca el destino que puede ser:
+                    <ol>
+                        <li>una direccion absoluta: http://www.unad.com.co</li>
+                        <li>una direccion relativa: fase2/design.html</li>
+                        <li>un correo electronico: mailto:jhondiaz08@gmail.com</li>
+                    </ol>
+                 </p>
+                <p>Referencia Bibliografica <br> Recio García, J. A. (2016). HTML5, CSS3 y JQuery: curso práctico. RA-MA Editorial. p. 68. https://elibro-net.bibliotecavirtual.unad.edu.co/es/ereader/unad/106494?page=68</p>
 
             </article>
 
