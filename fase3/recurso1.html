@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b449dc98b4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/font.css">
     <title>fase 3</title>
@@ -15,25 +16,28 @@
         <div class="header">
             <img src="img/logo.jpg" width="120" alt="">
             <center>
-                <h1>Recurso Digital Audio Autoria propia</h1>
+                <h1>Introducción y Aprendizaje a Flex Box, Listas y enlaces en HTML</h1>
             </center>
         </div>
 
         <div class="contenido">
             <div>
-                <ul class="menu">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#">Temas</a>
+                <div class="icono_menu">Menu<i class="icono fa-solid fa-bars"></i></div>
+                <ul class="menu"></i>
+                    <li><a href="index.html"><i class="icono izquierda fa fa-home"></i>Inicio</a></li>
+                    <li><a href="#"><i class="icono izquierda fa-solid fa-folder"></i>Temas<i
+                                class="icono derecha fa-solid fa-chevron-down"></i></a>
                         <ul>
                             <li><a href="tema1.html">Tema 1 Flex Box</a></li>
                             <li><a href="tema2.html">Tema 2 Lista y Enlaces en html</a></li>
                         </ul>
                     </li>
 
-                    <li><a href="#">Recursos Digitales</a>
+                    <li><a href="#"><i class="icono izquierda fa-solid fa-sliders"></i>Recursos Digitales<i
+                                class="icono derecha fa-solid fa-chevron-down"></i></a>
                         <ul>
-                            <li><a href="recurso1.html">Audio 1</a></li>
-                            <li><a href="#">Recurso 2</a></li>
+                            <li><a href="recurso1.html">Audio</a></li>
+                            <li><a href="recurso2.html">Video</a></li>
                         </ul>
                     </li>
 
@@ -46,9 +50,10 @@
 
                     <li><a href="#">Acerca de</a></li>
 
-                    <li><a href="autor.html">Autor</a></li>
+                    <li><a href="autor.html"><i class="icono izquierda fa-solid fa-copyright"></i>Autor</a></li>
                 </ul>
             </div>
+
 
             <div class="aside">
                 <a class="twitter-timeline" data-height="450" data-width="280" data-theme="dark"
@@ -57,15 +62,13 @@
             </div>
 
             <div class="main">
-                 <center>
-                    <audio controls>
-                        <source src="media/Grabacion.mp3" type="audio/mp3">
-                        
-                    </audio>
-                </center><br>
-            
-                <center><img src="img/slayer.JPG" width="600" height="600" alt="slayer"><br></center>
-                
+                <br>
+                <audio controls>
+                    <source src="media/Grabacion.mp3" type="audio/mp3">
+                </audio>
+                <img src="img/slayer.JPG" width="600" height="600" alt="slayer">
+
+
             </div>
 
         </div>

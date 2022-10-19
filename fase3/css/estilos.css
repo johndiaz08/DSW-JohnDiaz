@@ -1,14 +1,13 @@
 * {
-  padding: 0px;
   margin: 0px;
+  padding: 0px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .contenedor {
   display: flex;
   flex-direction: column;
-  
-
+ 
 }
 
 .contenedor .header {
@@ -21,7 +20,6 @@
   border-radius: 1em;
   margin: 0.5em;
   
-
 }
 
 .contenedor .contenido {
@@ -38,7 +36,35 @@
   margin: 0.5em;
 }
 
+.icono_menu {
+  display: none;
+  padding: 20px;
+  background: #0d2c44;
+  color: #fff;
+  }
+
+.icono_menu .icono {
+float: right;
+}
+
+.menu .icono {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.menu .icono.izquierda {
+  float: left;
+  margin-right: 10px;
+}
+
+.menu .icono.derecha {
+  float: right;
+  margin-left: 10px;
+}
+
 .contenedor .contenido .menu {
+  flex-wrap: wrap;
+  flex-direction: column;
   height: 100%;
   width: 15%;
   border-radius: 1em;
@@ -73,7 +99,7 @@ a {
 }
 
 .contenedor .menu ul li a {
-  border-radius: 1em;
+  
   background: #8b7f7f;
   color: #e9e9e9;
 }
@@ -88,13 +114,26 @@ a {
 }
 
 
-.contenedor .contenido .main {
+.main {
   background-color: #2451915c;
   border-radius: 1em;
   height: 100%;
   width: 60%;
   float: right;
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: justify; 
 }
+
+.main img {
+  width: 450px;
+  border-radius: 1em;
+  float: left;
+  margin-right: 15px;
+     
+}
+
+
 
 .contenedor .contenido .aside {
   height: 100%;
@@ -102,16 +141,17 @@ a {
   border-radius: 1em;
   margin: 0.5em;
   float: right;
+  
 }
 
-.contenedor .contenido .main .articulos {
+.contenedor .contenido .main {
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: none;
 
 }
 
-.contenedor .contenido .main .articulos:nth-child(1) {
+.contenedor .contenido .main:nth-child(1) {
   margin-bottom: 0px;
   padding-bottom: 0px;
   border-bottom: none;
