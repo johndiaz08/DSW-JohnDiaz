@@ -1,0 +1,159 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.contenedor .header {
+  display: flex;
+  flex-direction: row;
+  align-items:center ;
+  height: 15%;
+  background: #141E61;
+  color: #e9e9e9;
+  border-radius: 1em;
+  margin: 0.5em;
+  
+}
+
+.contenedor .contenido {
+  height: 70%;
+  border-radius: 1em;
+  margin: 0.5em;
+}
+
+.contenedor .footer {
+  height: 15%;
+  background: #EEEEEE;
+  color: rgb(6, 6, 6);
+  border-radius: 1em;
+  margin: 0.5em;
+}
+
+.icono_menu {
+  display: none;
+  padding: 20px;
+  background: #0d2c44;
+  color: #fff;
+  }
+
+.icono_menu .icono {
+float: right;
+}
+
+.menu .icono {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.menu .icono.izquierda {
+  float: left;
+  margin-right: 10px;
+}
+
+.menu .icono.derecha {
+  float: right;
+  margin-left: 10px;
+}
+
+.contenedor .contenido .menu {
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100%;
+  width: 15%;
+  border-radius: 1em;
+  margin: 0.5em;
+  float: left;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(51, 12, 226);
+}
+
+.contenedor ul {
+  list-style: none;
+}
+
+.contenedor .menu li a {
+  color: #494949;
+  display: block;
+  padding: 10px 15px;
+  background: #e9e9e9;
+}
+
+.contenedor .menu li a:hover {
+  background: #1a95d5;
+  color: #fff;
+}
+
+.contenedor .menu ul {
+  display: none;
+
+}
+
+.contenedor .menu ul li a {
+  
+  background: #8b7f7f;
+  color: #e9e9e9;
+}
+
+.contenedor .menu .activado>a {
+  background: #1a95d5;
+  color: #e9e9e9;
+}
+
+.contenedor .menu li:hover>ul {
+  display: block;
+}
+
+
+.main {
+  background-color: #2451915c;
+  border-radius: 1em;
+  height: 100%;
+  width: 60%;
+  float: right;
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: justify; 
+}
+
+.contenedor .contenido .aside {
+  height: 100%;
+  width: 20%;
+  border-radius: 1em;
+  margin: 0.5em;
+  float: right;
+  
+}
+
+.contenedor .contenido .main {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: none;
+
+}
+
+.contenedor .contenido .main:nth-child(1) {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  border-bottom: none;
+
+}
+
+.autor {
+  display: flex;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(8, 8, 8);
+  align-items: center;
+  border-radius: 1em;
+  
+}

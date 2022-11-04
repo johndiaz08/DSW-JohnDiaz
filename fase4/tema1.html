@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b449dc98b4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/font.css">
+    <title>fase 3</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="header">
+            <img src="img/logo.jpg" width="120" alt="">
+            <center>
+                <h1>Introducción y Aprendizaje a Flex Box, Listas y enlaces en HTML</h1> 
+            </center>
+        </div>
+
+        <div class="contenido">
+            <div>
+                <div class="icono_menu">Menu<i class="icono fa-solid fa-bars"></i></div>
+                <ul class="menu"></i>
+                    <li><a href="index.html"><i class="icono izquierda fa fa-home"></i>Inicio</a></li>
+                    <li><a href="#"><i class="icono izquierda fa-solid fa-folder"></i>Temas<i class="icono derecha fa-solid fa-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="tema1.html">Tema 1 Flex Box</a></li>
+                            <li><a href="tema2.html">Tema 2 Lista y Enlaces en html</a></li>
+                        </ul>
+                    </li>
+    
+                    <li><a href="#"><i class="icono izquierda fa-solid fa-sliders"></i>Recursos Digitales<i class="icono derecha fa-solid fa-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="recurso1.html">Audio</a></li>
+                            <li><a href="recurso2.html">Video</a></li>
+                        </ul>
+                    </li>
+    
+                    <li><a href="#">Aprendizaje</a>
+                        <ul>
+                            <li><a href="evaluacion1.html">evaluacion 1</a></li>
+                            <li><a href="evaluacion2.html">evaluacion 2</a></li>
+                        </ul>
+                    </li>
+    
+                    <li><a href="#">Acerca de</a></li>
+    
+                    <li><a href="autor.html"><i class="icono izquierda fa-solid fa-copyright"></i>Autor</a></li>
+                </ul>
+            </div>
+
+
+            <div class="aside">
+                <a class="twitter-timeline" data-height="450" data-width="280"  data-theme="dark" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>  
+
+            <div class="main">
+                
+                      <article>
+                        <center><h4>Flex Box</h4></center><br>
+                        
+                        <center><img src="img/imagen_flexbox.jpg"></center>
+                        <p> 
+                        para mostrar las caracteristicas del flexbox se debe crear el contenedor con el siguiente codigo.
+                        
+                            div class="flex-container"  <br>
+                            div <br>
+                                container1
+                            /div 
+                            div <br>
+                                container2
+                            /div
+                            div <br>
+                                container3
+                            /div
+                            div <br>
+                                container4
+                            /div <br>
+                            /div 
+                        </p> <br>
+                        <p>
+                         tambien debemos utilizar una hoja de estilos CSS para darle formato a los elementos <br>
+                        </p>
+                        <p>   
+                        .flex-container{<br>
+                            display: flex;<br>
+                            background-color: burlywood;<br>
+                            padding: 10px;<br>
+                            border: 2px solid black;<br>
+                         } <br><br>
+                         .flex-container div{<br>
+                            background-color: gainsboro;<br>
+                            width: 100px;<br>
+                            magin: 10px;<br>
+                            text-alingn: center;<br>
+                            line-height: 75px;<br>
+                            font-size: 30px;<br>
+                            border: 2px solid black;<br>
+                         }
+                        </p> <br>
+                         <p>
+                            los flexbox manejan direccion con la propiedad flex-direction el cual especifica
+                            la direccion principal de como colocar los elementos en el contenedor.
+                            los valores que se utilizan son: row(fila),  row-reverse (fila invertida), 
+                            column(columna), column-reverse(columna.invertida). <br>
+                            #container1{<br>
+                                flex-direction: row;<br>
+                            }br
+                            #container2{<br>
+                                flex-direction: row-reverse;<br>
+                            }br
+                            #container3{<br>
+                                flex-direction: column;<br>
+                            }<br>
+                            #container4{<br>
+                                flex-direction: column-reverse;<br>
+                            }<br>
+                         </p><br>
+                        <p>
+                        <img src="img/ejemplo_flexbox.jpg" width="250 px" align="left"> 
+                                             
+                        hay otras propiedades que nos permiten ordenarlos y que ocupen un 
+                        espacio estas propiedades son: <br>
+                        order: este indica el orden donde quiere que aparezca el elemento
+                        dentro del contenedor dentro del div hijo se coloca el siguiente 
+                        codigo: order: 1 <br>
+                        flex-grow: esta propiedad establece cuanto crecera el elemento en 
+                        relacion con los otros y lo indicamos asi: flex-grow: 2 <br>
+                        flex-sharing: es lo contrario se encoge de tamaño en relacion 
+                        con los otros. <br>
+                        flex-basis: indica el tamaño por defecto (ancho) del elemento antes
+                        que el espacio libre sea distribuido normalmente se deja el valor por 
+                        defecto flex-basis: auto. <br>
+                        Referencia Bibliografica  Recio García, J. A. (2016). HTML5, CSS3 y JQuery: curso práctico. RA-MA Editorial. p. 118-127. https://elibro-net.bibliotecavirtual.unad.edu.co/es/ereader/unad/106494?page=118
+                      </p>                                 
+                    </article> 
+            </div>
+            
+      </div>
+        <div class="footer">
+            <footer>
+                <section>
+                    <center> John Anderson Diaz Lizcano - jadiazliz@unadvirtual.edu.co <br>
+                        <a href="skype:remix-xx?chat">Usuario de Skype remix-xx</a> <br>
+                        fecha de actualización 01 de Octubre 2022
+                    </center>
+                </section>
+            </footer>
+        </div>
+
+    </div>
+</body>
+
+</html>
